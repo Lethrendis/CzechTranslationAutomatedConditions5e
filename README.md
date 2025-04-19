@@ -1,5 +1,5 @@
 
-# CzechMidi-QoL
+# CzechAutomatedConditions5e
 
 Czech translation of Automated Conditions 5e 13.439.2.
 
