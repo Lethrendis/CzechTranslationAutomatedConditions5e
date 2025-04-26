@@ -1,7 +1,7 @@
 
 # CzechAutomatedConditions5e
 
-Czech translation of Automated Conditions 5e 13.500.1.
+Czech translation of Automated Conditions 5e 13.500.3.3
 
 ## Popis
 Tento modul poskytuje českou lokalizaci pro Automated Conditions 5e verze 13.500.1. Obsahuje překlady základních textů aplikace.
