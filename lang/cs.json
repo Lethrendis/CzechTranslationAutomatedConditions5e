@@ -1,48 +1,76 @@
 {
-	"AC5E.ShowTooltipsName": "Zobrazení popisek AC5e:",
+	"AC5E.ShowTooltipsName": "Zobrazení popisek AC5e",
 	"AC5E.ShowTooltipsHint": "Když je příslušná možnost vybrána, AC5e zobrazí užitečný popisek při přejetí myší nad navrhovaným tlačítkem hodu či vygenerovanou zprávu, případně nad obojím, a shrne důvody pro tento návrh.",
 	"AC5E.ShowToolTipsChoicesBoth": "Nad dialogy hodů a zprávami v chatu",
 	"AC5E.ShowToolTipsChoicesDialog": "Pouze nad dialogy hodů",
 	"AC5E.ShowToolTipsChoicesChat": "Pouze nad zprávami v chatu",
 	"AC5E.ShowToolTipsChoicesNone": "Nezobrazovat nad ničím",
-	"AC5E.ShowModuleNameInTooltipsName": "Zobrazení názvu modulu AC5e v popiscích",
-	"AC5E.ExpandedConditionsName": "Rozšířené stavy AC5e",
+	"AC5E.ShowModuleNameInTooltipsName": "Zobrazovat název modulu AC5e v popiscích?",
+	"AC5E.ShowTooltipChatVisibility.Name": "Zobrazení popisek v chatu pro",
+	"AC5E.ShowTooltipChatVisibility.Hint": "'Všichni' – všechny hody postav, 'Nikdo' – žádné hody, 'Vlastnění' – hody vlastněných postav, 'Hráči' – hody hráčských postav",
+	"AC5E.ShowTooltipChatVisibility.All": "Všichni",
+	"AC5E.ShowTooltipChatVisibility.None": "Nikdo",
+	"AC5E.ShowTooltipChatVisibility.Owned": "Vlastnění",
+	"AC5E.ShowTooltipChatVisibility.Players": "Hráči",
+	"AC5E.ExpandedConditionsName": "Používat rozšířené stavy AC5e?",
 	"AC5E.ExpandedConditionsHint": "Pokud je zaškrtnuto, tak se AC5e pokusí automatizovat některé další stavy, například Uhýbání či Skrývání se.",
-	"AC5E.AutoArmorName": "AC5e výcvik v používání zbrojí a Nevýhoda na Nenápadnost.",
-	"AC5E.AutoArmorHint": "Pokud je zaškrtnuto, AC5e automaticky zpracuje zdatnost s nasazenou zbrojí pro hody na vlastnosti, dovednosti a záchranné hody (na Sílu a Obratnost) a zkontroluje vybavení kvůli možné Nevýhodě na Nenápadnost.",
-	"AC5E.AutoArmorSpellUseName": "AC5e výcvik v používání zbrojí, stavy Zuřící, Ztišený(á) a kouzla",
-	"AC5E.AutoArmorSpellUseHint": "'Nedělat nic': vypne; 'Vynutit': pokud není dovoleno používat kouzla, je hod zrušen; 'Upozornit': pokud není dovoleno používat kouzla, upozorní uživatele.",
-	"AC5E.AutoArmorSpellUseChoicesOff": "Nedělat nic",
-	"AC5E.AutoArmorSpellUseChoicesEnforce": "Vynutit",
-	"AC5E.AutoArmorSpellUseChoicesWarn": "Upozornit",
-	"AC5E.AutoArmorSpellUseChoicesEnforceToast": "nemá výcvik s nasazenou zbrojí a podle pravidel (RAW) nemůže sesílat kouzla. Kouzlo zrušeno!",
-	"AC5E.AutoArmorSpellUseChoicesWarnToast": "nemá výcvik s nasazenou zbrojí a podle pravidel (RAW) nemůže sesílat kouzla.",
-	"AC5E.AutoIncapacitatedSpellUseChoicesEnforceToast": "je ´zneschopněný(á)´ a nemůže sesílat kouzla. Kouzlo zrušeno!",
-	"AC5E.AutoIncapacitatedSpellUseChoicesWarnToast": "je ´zneschopněný(á)´ a nemůže sesílat kouzla.",
-	"AC5E.AutoRagingSpellUseChoicesEnforceToast": "´zuří´ a nemůže sesílat kouzla. Kouzlo zrušeno!",
-	"AC5E.AutoRagingSpellUseChoicesWarnToast": "´zuří´ a nemůže sesílat kouzla.",
-	"AC5E.AutoSilencedSpellUseChoicesEnforceToast": "je ´ztišený(á)´ a nemůže sesílat kouzla s verbální složkou. Kouzlo zrušeno!",
-	"AC5E.AutoSilencedSpellUseChoicesWarnToast": "je ´ztišený(á)´ a nemůže sesílat kouzla s verbální složkou.",
-	"AC5E.AutoRangedAttacksName": "Automatizace útoků střelbou AC5e:",
+	"AC5E.AutoArmorName": "Automatizovat AC5e výcvik v používání zbrojí a Nevýhodu na Nenápadnost?",
+	"AC5E.AutoArmorHint": "Pokud je zaškrtnuto, AC5e automaticky kontroluje zdatnost s nasazenou zbrojí pro hody na vlastnosti, dovednosti a záchrany (na Sílu a Obratnost). Též kontroluje vybavení kvůli možné Nevýhodě na Nenápadnost.",
+		"AC5E.ActivityUse" : {
+		"Name": "Kontroly použití položek",
+		"Hint": "Když je snaha o použití pravidly nedovolené položky, AC5e může 'Nedělat nic', pouze 'Varovat' (oznámení), nebo 'Zakázat' (zrušení hodu + oznámení). Kontrolované stavy jsou: ´zneschopnění´ pro dané akce, ´zuřivost´, ´ztišení ´a sesílání kouzel ve zbroji bez výcviku.",
+		"Choices": {
+			"Off": "Nedělat nic",
+			"Enforce": "Zakázat",
+			"Warn": "Varovat"
+		},
+		"Type": {
+			"Armor": {
+				"Enforce": "nemá výcvik s nasazenou zbrojí a podle striktního výkladu pravidel nemůže sesílat kouzla. Kouzlo zrušeno!",
+				"Warn": "nemá výcvik s nasazenou zbrojí a podle podle striktního výkladu pravidel nemůže sesílat kouzla."
+			},
+			"Incapacitated": {
+				"Enforce": "je ´zneschopněný´ a nemůže provádět žádné akce. Akce zrušena!",
+				"Warn": "je ´zneschopněný´ a nemůže provádět žádné akce."
+			},
+			"Raging": {
+				"Enforce": "zuří a nemůže sesílat kouzla. Kouzlo zrušeno!",
+				"Warn": "zuří a nemůže sesílat kouzla."
+			},
+			"Silenced": {
+				"Enforce": "je ´ztišený´ a nemůže sesílat kouzla s verbální složkou. Kouzlo zrušeno!",
+				"Warn": "je ´ztišený´ a nemůže sesílat kouzla s verbální složkou."
+			}
+		}		
+	},
+	"AC5E.AutoRangedAttacksName": "Automatizace útoků střelbou AC5e",
 	"AC5E.AutoRangedAttacksHint": "'Vypnout': AC5e nebude dostřel kontrolovat; 'Pouze kontroly dostřelu': AC5e automaticky zpracuje Nevýhodu/selhání na základě vzdálenosti cíle a parametrů dostřelu položky použité k útoku; 'Dostřel + blízcí nepřátelé': Nepřátelé blízko útočníka udělují Nevýhodu na útoky střelbou.",
 	"AC5E.AutoRangedAttacksChoicesOff": "Vypnout",
 	"AC5E.AutoRangedAttacksChoicesRangeOnly": "Pouze kontroly dostřelu",
 	"AC5E.AutoRangedAttacksChoicesNearbyFoes": "Dostřel + blízcí nepřátelé",
 	"AC5E.AutoExhaustionName": "Automatizace vyčerpání AC5e.",
 	"AC5E.AutoExhaustionHint": "Pokud je zaškrtnuto a jsou používána tradiční pravidla DnD5e2014, AC5e automaticky zpracuje standardní pravidla vyčerpání 5e.",
-	"AC5E.AutoEncumbranceName": "Volitelné zatížení AC5e.",
-	"AC5E.AutoEncumbranceHint": "Pokud je zaškrtnuto, AC5e automaticky zpracuje variantní pravidla zatížení 5e. PJ musí také vybrat v nastavení systému Dnd5e možnost ´Volitelné´ (zatížený & těžce zatížený), jinak to nebude mít žádný efekt.",
-	"AC5E.MultipleTargetsAttackWarn": "AC5e: Útočíš na více cílů, což není podporováno. Výsledky hodu mohou být zkreslené.",
-	"AC5E.NoTargetsAttackWarn": "AC5e: Při útoku nemáě vybráný žádný cíl. Pokud chceš, aby AC5e správně navrhoval režimy Výhody, vždy vyber cíl.",
-	"AC5E.MultipleTargetsDamageWarn": "AC5e: Zraňuješ více cílů, což není podporováno. Výsledky hodu mohou být zkreslené.",
-	"AC5E.NoTargetsDamageWarn": "AC5e: Při hodu na zásah nemáš vybrán žádný cíl. Pokud chceš, aby AC5e správně navrhoval režimy hodu, vždy vyber cíl.",
-	"AC5E.TargetingChoicesNone": "Nedělat nic",
-	"AC5E.TargetingChoicesSource": "Pouze ze zdroje",
-	"AC5E.TargetingChoicesForce": "Vynutit cílení",
-	"AC5E.TargetingName": "Možnosti cílení AC5e",
-	"AC5E.TargetingHint": "Pokud není při hodu na útok nebo na zásah vybrán žádný či více cílů, pak AC5e: 'Nedělat nic': Nebude vypočítávat režimu Výhody/zásahu příchozího hodu; 'Pouze ze zdroje': Režim Výhody/zásahu na základě efektů zdrojového aktéra; 'Vynutit cílení': Zruší hod a před zopakováním požádá o výběr cílů (Používej opatrně).",
-	"AC5E.KeypressOverrideName": "Přepis výpočtů AC5 klávesovými zkratkami",
-	"AC5E.KeypressOverrideHint": "Klávesové zkratky pro Výhodu, Nevýhodu, a kritický zásah by měly přepsat jakékoli výpočty AC5e (při zaškrtnutí), nebo se přidat k normálním výpočtům AC5e (pokud není zaškrtnuto).",
+	"AC5E.AutoEncumbranceName": "Používat volitelné zatížení AC5e?",
+	"AC5E.AutoEncumbranceHint": "Pokud je zaškrtnuto, AC5e automaticky zpracuje volitelná pravidla zatížení 5e. PJ musí též vybrat v nastavení systému Dnd5e možnost ´Volitelné´ (zatížený & těžce zatížený), jinak to nebude mít žádný efekt.",
+	"AC5E.Targeting": {
+		"Name": "Možnosti cílení útoků",
+		"Hint": "Jak má AC5e reagovat, když není vybrán žádný cíl útoku, nebo naopak více cílů?",
+		"Choices": {
+			"Source": "Použít pouze stavy zdrojového aktéra",
+			"Enforce": "Zrušit hod bez varování",
+			"Warn": "Zrušit hod s varováním"
+		},
+		"MultipleTargetsAttack": {
+			"Source": "AC5e: Vybráno více cílů. Výsledky mohou být zkreslené. Použijí se pouze data zdrojového aktéra.",
+			"Enforce": "AC5e: Vybráno více cílů. Hod zrušen!"
+		},
+		"NoTargetsAttack": {
+			"Source": "AC5e: Nebyl vybrán žádný cíl. Výhoda/Nevýhoda může být nepřesná. Použijí se pouze data zdrojového aktéra.",
+			"Enforce": "AC5e: Nebyl vybrán žádný cíl. Hod zrušen!"
+		}
+	},
+	"AC5E.KeypressOverrideName": "Přepisovat výpočty AC5 klávesovými zkratkami?",
+	"AC5E.KeypressOverrideHint": "Klávesové zkratky pro Výhodu, Nevýhodu a kritický zásah by měly přepsat jakékoli výpočty AC5e (při zaškrtnutí), nebo se přidat k normálním výpočtům AC5e (pokud není zaškrtnuto).",
 	"AC5E.DebuggingName": "Ladění AC5e",
 	"AC5E.DebuggingHint": "Pár užitečných logů pro ladění při vývoji. Pro běžné uživatele to pravděpodobně není potřebné :)",
 	"AC5E.WarCaster": "Válečný sesilatel",
@@ -58,7 +86,7 @@
 	"AC5E.NearbyFoe": "Blízký nepřítel",
 	"AC5E.ButtonColorPicker": {
 		"Enabled": {
-			"Name": "Barevná tlačítka",
+			"Name": "Barvit tlačítka?",
 			"Hint": "Nech vyniknout dialogová tlačítka hodu. Výchozí barvy: #288bcc (pozadí), bílá (text/okraj). Nech uživatele, aby použili game.user.color (nejlépe pro pozadí). Zadáním false/none/null/0 lze vypnout některé z dostupných voleb barev. Vymazáním libovolného pole se vrátíš k výchozímu nastavení."
 		},
 	    "Background": {
@@ -81,17 +109,18 @@
 	"AC5E.AbbreviationCritical": "krit",
 	"AC5E.Grants": "zajišťuje",
 	"AC5E.Attacker": "Útočník",
+	"AC5E.FlagsInitiativeDisadv": "Nevýhoda na iniciativu",
 	"AC5E.TargetGrantsAdvantageAbbreviated": "Cíl zajišťuje Výhodu",
 	"AC5E.TargetGrantsDisadvantageAbbreviated": "Cíl zajišťuje Nevýhodu",
-	"AC5E.TargetCriticalAbbreviated": "Cíl zajišťuje krit",
+	"AC5E.TargetGrantsCriticalAbbreviated": "Cíl zajišťuje krit",
 	"AC5E.TargetGrantsFail": "Cíl zajišťuje selhání",
 	"AC5E.TargetGrantsFumble": "Cíl zajišťuje kritické selhání",
 	"AC5E.TargetGrantsSuccess": "Cíl zajišťuje úspěch",
 	"AC5E.TargetGrantsBonus": "Cíl zajišťuje bonus",
 	"AC5E.NoChanges": "Beze změn",
 	"AC5E.SystemMode": "Režim systému",
-	"AC5E.EnviromentalHazards": {
-	    "SettingsName": "Hrozby prostředí (2024)",
+	"AC5E.EnvironmentalHazards": {
+	    "SettingsName": "Používat hrozby prostředí (DnD2024)?",
 	    "SettingsHint": "Automatizuje stavy ´hořící´ a ´dusící se´ dle pravidel DnD5e2024",
 	    "BurningHazard": "Hrozba hoření",
 	    "SuffocatingHazard": "Hrozba dušení"
@@ -116,7 +145,7 @@
 				"description": "Nahraď ACTIONTYPE jedním z: all/attack/check/concentration/damage/death/initiative/save/skill/tool; např. bonus=1d4 + 5 - @abilities.dex.mod;"
 			},
 			"critical": {
-				"name": "Padl krit (přirozená dvacítka, nebo kritické zranění)",
+				"name": "Kritický hod (přirozená dvacítka, nebo kritické zranění)",
 				"description": "Nahraď ACTIONTYPE jedním z: all/attack/check/concentration/damage/death/initiative/save/skill/tool"
 			},
 			"disadvantage": {
