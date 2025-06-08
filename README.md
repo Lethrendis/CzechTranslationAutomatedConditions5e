@@ -10,7 +10,7 @@ Tento modul poskytuje českou lokalizaci pro Automated Conditions 5e verze 13.50
 Pro instalaci modulu obvyklým upůsobem můžeš použít následující odkaz ve Foundry VTT:
 
 ```
-https://raw.githubusercontent.com/Lethrendis/CzechTranslationAutomatedConditions5e/main/module.json
+https://raw.githubusercontent.com/Lethrendis/CzechTranslationAutomatedConditions5e/Core12/module.json
 ```
 
 ## Autor
