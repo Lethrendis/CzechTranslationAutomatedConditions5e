@@ -1,12 +1,12 @@
 {
   "id": "czechtranslationautomatedconditions5e",
   "title": "CzechTranslationAutomatedConditions5e",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "compatibility": {
-    "minimum": "12.331",
-    "verified": "12.331"
+    "minimum": "13.345",
+    "verified": "13.345"
   },
-  "description": "Český překlad Automated Conditions 5e 13.503.9.2.",
+  "description": "Český překlad Automated Conditions 5e 13.503.11.2",
   "authors": [
     {
       "name": "Lethrendis",
