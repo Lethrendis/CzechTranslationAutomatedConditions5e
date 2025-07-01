@@ -3,10 +3,10 @@
   "title": "CzechTranslationAutomatedConditions5e",
   "version": "1.1.0",
   "compatibility": {
-    "minimum": "13.345",
-    "verified": "13.345"
+    "minimum": "13.346",
+    "verified": "13.346"
   },
-  "description": "Český překlad Automated Conditions 5e 13.503.11.2",
+  "description": "Český překlad Automated Conditions 5e 13.504.1",
   "authors": [
     {
       "name": "Lethrendis",
