@@ -140,10 +140,22 @@
 		"flags.automated-condition-5e.sharpShooter": {
 			"name": "Ostrostřelec",
 			"description": "Když je nepřítel do 5 stop od tebe, nemáš Nevýhodu na útok lukem"
-					},
+		},
 		"flags.automated-condition-5e.spellSniper": {
 			"name": "Vrhač kouzel",
 			"description": "Podle pravidel DnD2024, když je nepřítel do 5 stop od tebe, nemáš Nevýhodu na útok kouzlem na dálku a pokud má kouzlo dosah alespoň 10 stop, přidává dalších 60 stop"
+		},
+		"flags.automated-conditions-5e.attack.criticalThreshold": {
+			"name": "Změní práh kritického zásahu útoků",
+			"description": "Použij threshold=18, nebo threshold=-1d6. První nastaví hodnotu na 18, pokud je nižší, a druhá přičte k aktuální; pro snížení použij záporné číslo"
+		},
+		"flags.automated-conditions-5e.grant.attack.criticalThreshold": {
+			"name": "Zajistí upravený práh kritického zásahu útokům protivníka",
+			"description": "Použij threshold=18, nebo threshold=-1d6. První nastaví hodnotu na 18, pokud je nižší, a druhá přičte k aktuální; pro snížení použij záporné číslo"
+		},
+		"flags.automated-conditions-5e.aura.attack.criticalThreshold": {
+			"name": "Aura měnící práh kritického zásahu útoků v dosahu",
+			"description": "Použij radius=10;threshold=13; nebo radius=15;threshold=-1d6. První nastaví hodnotu na 18, pokud je nižší, a druhá přičte k aktuální; pro snížení použij záporné číslo"
 		},
 		"flags.automated-conditions-5e.ACTIONTYPE": {
 			"advantage": {
@@ -177,31 +189,31 @@
 		},
 		"flags.automated-conditions-5e.grants.ACTIONTYPE": {
 			"advantage": {
-				"name": "Zajištění Výhody ověřením k20 protivníka",
+				"name": "Zajistí Výhodu ověření k20 protivníka",
 				"description": "Nahraď ACTIONTYPE jedním z: all/attack/check/concentration/death/initiative/save/skill/tool"
 			},
 			"bonus": {
-				"name": "Zajištění bonusu ověřením protivníka",
+				"name": "Zajistí bonus ověření protivníka",
 				"description": "Nahraď ACTIONTYPE jedním z: all/attack/check/concentration/damage/death/initiative/save/skill/tool. Začni výrazem bonus= následovaným oddělovačem ;, např. bonus=1d4 + 5 - @abilities.dex.mod;"
 			},
 			"critical": {
-				"name": "Zajištění kritického zásahu (přirozená dvacítka, nebo zranění) ověřením protivníka",
+				"name": "Zajistí kritický zásah (přirozená dvacítka, nebo zranění) ověření protivníka",
 				"description": "Nahraď ACTIONTYPE jedním z: all/attack/check/concentration/damage/death/initiative/save/skill/tool"
 			},
 			"disadvantage": {
-				"name": "Zajištění Nevýhody ověřením k20 protivníka",
+				"name": "Zajistí Nevýhodu ověření k20 protivníka",
 				"description": "Nahraď ACTIONTYPE jedním z: all/attack/check/concentration/death/initiative/save/skill/tool"
 			},
 			"fail": {
-				"name": "Zajištění selhání ověřením k20 protivníka",
+				"name": "Zajistí selhání ověření k20 protivníka",
 				"description": "Nahraď ACTIONTYPE jedním z: all/attack/check/concentration/death/save/skill/tool"
 			},
 			"fumble": {
-				"name": "Zajištění kritického selhání (přirozená jednička) ověřením d20 protivníka",
+				"name": "Zajistí kritické selhání (přirozená jednička) ověření k20 protivníka",
 				"description": "Nahraď ACTIONTYPE jedním z: all/attack/check/concentration/death/initiative/save/skill/tool"
 			},
 			"success": {
-				"name": "Ověření k20 proti tobě, nebo tebou způsobené jsou úspěšné",
+				"name": "Ověření k20 proti tobě, nebo tebou způsobené, jsou úspěšné",
 				"description": "Nahraď ACTIONTYPE jedním z: all/attack/check/concentration/death/save/skill/tool"
 			}
 		},
