@@ -18,7 +18,7 @@
 	"AC5E.AutoArmorHint": "Po zaškrtnutí bude AC5e automaticky kontrolovat výcvik s nasazenou zbrojí pro hody na vlastnosti, dovednosti a záchrany (na Sílu a Obratnost). Též kontroluje vybavení kvůli možné Nevýhodě na Nenápadnost.",
 		"AC5E.ActivityUse" : {
 		"Name": "Kontroly použití položek",
-		"Hint": "Když je snaha o použití pravidly nedovolené položky, AC5e může 'Nedělat nic', pouze 'Varovat' (oznámení), nebo 'Zakázat' (zrušení hodu + oznámení). Kontrolované stavy jsou: ´zneschopnění´ pro dané akce, ´zuřivost´, ´ztišení ´a sesílání kouzel ve zbroji bez výcviku.",
+		"Hint": "Když je snaha o použití pravidly nedovolené položky, AC5e může 'Nedělat nic', pouze 'Varovat' (oznámení), nebo 'Zakázat' (zrušení hodu + oznámení). Kontrolované stavy jsou: zneschopnění pro dané akce, zuřivost, ztišení a sesílání kouzel ve zbroji bez výcviku.",
 		"Choices": {
 			"Off": "Nedělat nic",
 			"Enforce": "Zakázat",
@@ -30,16 +30,16 @@
 				"Warn": "nemá výcvik s nasazenou zbrojí a podle podle pravidel nemůže sesílat kouzla."
 			},
 			"Incapacitated": {
-				"Enforce": "je ´zneschopněný/á´ a nemůže provádět žádné akce. Akce zrušena!",
-				"Warn": "je ´zneschopněný/á´ a nemůže provádět žádné akce."
+				"Enforce": "je zneschopněný/á a nemůže provádět žádné akce. Akce zrušena!",
+				"Warn": "je zneschopněný/á a nemůže provádět žádné akce."
 			},
 			"Raging": {
 				"Enforce": "zuří a nemůže sesílat kouzla. Kouzlo zrušeno!",
 				"Warn": "zuří a nemůže sesílat kouzla."
 			},
 			"Silenced": {
-				"Enforce": "je ´ztišený/á´ a nemůže sesílat kouzla s verbální složkou. Kouzlo zrušeno!",
-				"Warn": "je ´ztišený/á´ a nemůže sesílat kouzla s verbální složkou."
+				"Enforce": "je ztišený/á a nemůže sesílat kouzla s verbální složkou. Kouzlo zrušeno!",
+				"Warn": "je ztišený/á a nemůže sesílat kouzla s verbální složkou."
 			}
 		}		
 	},
@@ -127,7 +127,7 @@
 	"AC5E.SystemMode": "Režim systému",
 	"AC5E.EnvironmentalHazards": {
 	    "SettingsName": "Používat hrozby prostředí (2024)?",
-	    "SettingsHint": "Automatizuje stavy ´hořící´ a ´dusící se´ dle pravidel DnD5e2024",
+	    "SettingsHint": "Automatizuje podle pravidel DnD5e2024 stavy hořící a dusící se.",
 	    "BurningHazard": "Hrozba hoření",
 	    "SuffocatingHazard": "Hrozba dušení"
 	},
@@ -155,7 +155,7 @@
 		},
 		"flags.automated-conditions-5e.aura.attack.criticalThreshold": {
 			"name": "Aura měnící práh kritického zásahu útoků v dosahu",
-			"description": "Použij radius=10;threshold=13; nebo radius=15;threshold=-1d6. První nastaví hodnotu na 18, pokud je nižší, a druhá přičte k aktuální; pro snížení použij záporné číslo"
+			"description": "Použij radius=10;threshold=18; nebo radius=15;threshold=-1d6. První nastaví hodnotu na 18, pokud je nižší, a druhá přičte k aktuální; pro snížení použij záporné číslo"
 		},
 		"flags.automated-conditions-5e.ACTIONTYPE": {
 			"advantage": {
